@@ -82,6 +82,12 @@ module.exports = {
     "e2e": {
       "type": "confirm",
       "message": "Setup e2e tests with Nightwatch?"
+    },
+    "plugins": {
+      "type": 'checkbox',
+      "message": 'Select which Vue plugins to install',
+      "choices": ['splashscreen','bootstrap', 'momentjs', 'multilanguage', 'fontawesome','GoogleTagManager'],
+      "default": ['splashscreen','bootstrap', 'momentjs', 'multilanguage', 'fontawesome']
     }
   },
   "filters": {
@@ -91,7 +97,9 @@ module.exports = {
     "test/unit/**/*": "unit",
     "build/webpack.test.conf.js": "unit",
     "test/e2e/**/*": "e2e",
-    "src/router/**/*": "router"
+    "src/router/**/*": "router",
+    "src/locale/*": "multilanguage",
+    "static/img/splash/*": "splashscreen"
   },
   "completeMessage": "To get started:\n\n  {{^inPlace}}cd {{destDirName}}\n  {{/inPlace}}npm install\n  npm run dev\n\nDocumentation can be found at https://vuejs-templates.github.io/webpack"
 };

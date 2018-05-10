@@ -1,6 +1,15 @@
-# vue-pwa-boilerplate
+# vue-starter-kit
 
-> A full-featured [PWA](https://developers.google.com/web/progressive-web-apps/) template with webpack, hot-reload, lint-on-save, unit testing & css extraction.
+> A full-featured [PWA](https://developers.google.com/web/progressive-web-apps/) template with webpack, hot-reload, lint-on-save, unit testing, css extraction & extra plugins.
+
+## Plugins
+
+- [PWA Splash Screen](https://developers.google.com/web/updates/2015/10/splashscreen)
+- [Bootstrap-Vue](https://bootstrap-vue.js.org/)
+- [Vue-Moment](https://github.com/brockpetrie/vue-moment)
+- [Multi Language (Vue-Lang)](https://github.com/kvdmolen/vue-lang)
+- [Google Tag Manager](https://github.com/mib200/vue-gtm)
+
 
 ## Documentation
 
@@ -14,7 +23,7 @@ This is a project template for [vue-cli](https://github.com/vuejs/vue-cli). **It
 
 ```bash
 $ npm install -g vue-cli
-$ vue init pwa my-project
+$ vue init serhankilicarslan/vue-starter-kit my-project
 $ cd my-project
 $ npm install
 $ npm run dev
@@ -23,7 +32,7 @@ $ npm run dev
 This will scaffold the project using the `master` branch. If you wish to use the latest version of the PWA template, do the following instead:
 
 ``` bash
-$ vue init pwa#development my-project
+$ vue init serhankilicarslan/vue-starter-kit#development my-project
 ```
 
 :warning: **The `development` branch is not considered stable and can contain bugs or not build at all, so use at your own risk.**
@@ -74,18 +83,8 @@ See ["Configuring your Web server to prevent caching"](docs/prevent_caching.md) 
 
 ### Fork It And Make Your Own
 
-You can fork this repo to create your own boilerplate, and use it with `vue-cli`:
+You can fork this repo to create your own vue-starter-kit, and use it with `vue-cli`:
 
 ```bash
 vue init username/repo my-project
 ```
-
-## Contributing
-
-This project is a modified copy of the [`vue-webpack-boilerplate`](https://github.com/vuejs-templates/webpack) template.
-
-While we welcome contributions from the community, please note that changes to configuration that is shared between this project and `vue-webpack-boilerplate` should be made against `vue-webpack-boilerplate` *first*.
-
-Once the [upstream](https://stackoverflow.com/a/2739476/385997) PR is merged, please file an additional PR against this project making the equivalent changes. This will help ensure that the shared configuration does not diverge too much.
-
-Any changes that are specific to this project—related to service workers, or other PWA functionality—do not need an equivalent upstream PR.

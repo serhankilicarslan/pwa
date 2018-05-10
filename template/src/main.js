@@ -8,6 +8,34 @@ import App from './App'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 import router from './router'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/router}}
 
+{{#isEnabled plugins 'bootstrap'}}
+import Bootstrap from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+Vue.use(Bootstrap);
+{{/isEnabled}}
+
+{{#isEnabled plugins 'momentjs'}}
+import VueMoment from 'vue-moment'
+import moment from 'moment-timezone'
+require('moment/locale/tr')
+Vue.use(VueMoment, { moment })
+{{/isEnabled}}
+
+{{#isEnabled plugins 'fontawesome'}}
+import fa from 'fontawesome-vue';
+Vue.use(fa);
+{{/isEnabled}}
+
+{{#isEnabled plugins 'multilanguage'}}
+import Lang from 'vue-lang'
+var locales = {
+  "tr" : require("./locale/tr.json"),
+  "en" : require("./locale/en.json")
+}
+Vue.use(Lang, {lang: 'en', locales: locales})
+{{/isEnabled}}
+
 Vue.config.productionTip = false{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
 /* eslint-disable no-new */

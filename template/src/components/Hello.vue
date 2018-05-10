@@ -16,6 +16,12 @@
       <li><a href="http://vue-loader.vuejs.org/" target="_blank" rel="noopener">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
     </ul>
+    {{#isEnabled plugins 'multilanguage'}}
+    <h2>{{$lang.language}}</h2>
+    <ul>
+      <li v-for="lang in $langs" @click="$setLang(lang)">{{lang}}</li>
+    </ul>
+    {{/isEnabled}}
   </div>
 </template>
 
