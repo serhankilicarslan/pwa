@@ -7,7 +7,7 @@
 - [PWA Splash Screen](https://developers.google.com/web/updates/2015/10/splashscreen)
 - [Bootstrap-Vue](https://bootstrap-vue.js.org/)
 - [Vue-Moment](https://github.com/brockpetrie/vue-moment)
-- [Multi Language (Vue-Lang)](https://github.com/kvdmolen/vue-lang)
+- [Multi Language Vue-Lang](https://github.com/kvdmolen/vue-lang)
 - [Google Tag Manager](https://github.com/mib200/vue-gtm)
 
 
