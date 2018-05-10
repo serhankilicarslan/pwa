@@ -6,6 +6,10 @@ module.exports = {
       }
 
       return options.inverse(this);
+    },
+    "isEnabled" : function (list, check, opts) {
+      if (list[check]) return opts.fn(this)
+      else return opts.inverse(this)
     }
   },
   "prompts": {
