@@ -17,7 +17,7 @@
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
     </ul>
     {{#isEnabled plugins 'multilanguage'}}
-    <h2>{{$lang.language}}</h2>
+    <h2>\{{$lang.language}}</h2>
     <ul>
       <li v-for="lang in $langs" @click="$setLang(lang)">{{lang}}</li>
     </ul>
