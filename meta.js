@@ -92,7 +92,12 @@ module.exports = {
       "message": 'Select which Vue plugins to install',
       "choices": ['splashscreen','bootstrap', 'momentjs', 'multilanguage', 'botui', 'fontawesome', 'vue-analytics','GoogleTagManager'],
       "default": ['splashscreen','bootstrap', 'momentjs', 'multilanguage', 'botui', 'fontawesome', 'vue-analytics']
-    }
+    },
+    "analyticscode": {
+      "when": "plugins['vue-analytics']",
+      "message": "Google Analiytcs Code?",
+      "default" : "UI-XXXXXXX-X"
+    },
   },
   "filters": {
     ".eslintrc.js": "lint",

@@ -43,7 +43,10 @@ Vue.use(BotUI);
 
 {{#isEnabled plugins 'vue-analytics'}}
 import VueAnalytics from 'vue-analytics'
-Vue.use(VueAnalytics)
+Vue.use(VueAnalytics, {
+  id: '{{ analyticscode }}',
+  router
+})
 {{/isEnabled}}
 
 Vue.config.productionTip = false{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
