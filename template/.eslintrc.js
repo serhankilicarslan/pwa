@@ -13,11 +13,6 @@ module.exports = {
   {{#if_eq lintConfig "standard"}}
   // https://github.com/feross/standard/blob/master/RULES.md#javascript-standard-style
   extends: 'standard',
-  "sort-imports": ["error", {
-    "ignoreCase": true,
-    "ignoreMemberSort": true,
-    "memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
-  }]
   {{/if_eq}}
   {{#if_eq lintConfig "airbnb"}}
   extends: 'airbnb-base',
