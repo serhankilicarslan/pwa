@@ -90,9 +90,14 @@ module.exports = {
     "plugins": {
       "type": 'checkbox',
       "message": 'Select which Vue plugins to install',
-      "choices": ['splashscreen','bootstrap', 'momentjs', 'multilanguage', 'fontawesome','GoogleTagManager'],
-      "default": ['splashscreen','bootstrap', 'momentjs', 'multilanguage', 'fontawesome']
-    }
+      "choices": ['splashscreen','bootstrap', 'momentjs', 'multilanguage', 'botui', 'vuex', 'vue-form-generator', 'vue-recaptcha', 'fontawesome', 'vue-analytics','GoogleTagManager'],
+      "default": ['splashscreen','bootstrap', 'momentjs', 'multilanguage', 'botui', 'vuex', 'vue-form-generator', 'vue-recaptcha', 'fontawesome', 'vue-analytics']
+    },
+    "analyticscode": {
+      "when": "plugins['vue-analytics']",
+      "message": "Google Analiytcs Code?",
+      "default" : "UI-XXXXXXX-X"
+    },
   },
   "filters": {
     ".eslintrc.js": "lint",

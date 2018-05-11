@@ -12,7 +12,7 @@ import router from './router'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 import Bootstrap from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
-Vue.use(Bootstrap);
+Vue.use(Bootstrap)
 {{/isEnabled}}
 
 {{#isEnabled plugins 'momentjs'}}
@@ -23,18 +23,49 @@ Vue.use(VueMoment, { moment })
 {{/isEnabled}}
 
 {{#isEnabled plugins 'fontawesome'}}
-import fa from 'fontawesome-vue';
-Vue.use(fa);
+import fa from 'fontawesome-vue'
+Vue.use(fa)
 {{/isEnabled}}
 
 {{#isEnabled plugins 'multilanguage'}}
 import Lang from 'vue-lang'
 var locales = {
-  "tr" : require("./locale/tr.json"),
-  "en" : require("./locale/en.json")
+  'tr': require('./locale/tr.json'),
+  'en': require('./locale/en.json')
 }
 Vue.use(Lang, {lang: 'en', locales: locales})
 {{/isEnabled}}
+
+{{#isEnabled plugins 'botui'}}
+import BotUI from 'botui'
+Vue.use(BotUI)
+{{/isEnabled}}
+
+{{#isEnabled plugins 'vue-analytics'}}
+import VueAnalytics from 'vue-analytics'
+Vue.use(VueAnalytics, {
+  id: '{{ analyticscode }}',
+  router
+})
+{{/isEnabled}}
+
+{{#isEnabled plugins 'vuex'}}
+import Vuex from 'vuex'
+Vue.use(Vuex)
+{{/isEnabled}}
+
+{{#isEnabled plugins 'vue-form-generator'}}
+import VueFormGenerator from "vue-form-generator";
+import "vue-form-generator/dist/vfg.css";
+Vue.use(VueFormGenerator)
+{{/isEnabled}}
+
+{{#isEnabled plugins 'vue-recaptcha'}}
+import VueRecaptcha from 'vue-recaptcha';
+Vue.use(VueRecaptcha)
+{{/isEnabled}}
+
+
 
 Vue.config.productionTip = false{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
