@@ -25,7 +25,7 @@
     "botui": "^0.3.4"{{/isEnabled}}{{#isEnabled plugins 'vuex'}},
     "vuex": "^3.0.1"{{/isEnabled}}{{#isEnabled plugins 'vue-form-generator'}},
     "vue-form-generator": "^2.2.2"{{/isEnabled}}{{#isEnabled plugins 'vue-recaptcha'}},
-    "vue-recaptcha": "^1.1.1",{{/isEnabled}}
+    "vue-recaptcha": "^1.1.1"{{/isEnabled}}
   },
   "devDependencies": {
     "autoprefixer": "^7.1.5",
