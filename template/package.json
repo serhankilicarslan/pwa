@@ -20,9 +20,9 @@
     "fontawesome-vue": "0.0.1"{{/isEnabled}}{{#isEnabled plugins 'momentjs'}},
     "vue-moment": "^3.2.0",
     "moment-timezone": "^0.5.16"{{/isEnabled}}{{#isEnabled plugins 'multilanguage'}},
-    "vue-lang": "^0.2.5"{{/isEnabled}}
-    "vue-analytics": "^5.10.4",
-    "botui": "^0.3.4",
+    "vue-lang": "^0.2.5"{{/isEnabled}}{{#isEnabled plugins 'vue-analytics'}}
+    "vue-analytics": "^5.10.4",{{/isEnabled}}{{#isEnabled plugins 'botui'}}
+    "botui": "^0.3.4",{{/isEnabled}}
   },
   "devDependencies": {
     "autoprefixer": "^7.1.5",
