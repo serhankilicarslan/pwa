@@ -90,8 +90,8 @@ module.exports = {
     "plugins": {
       "type": 'checkbox',
       "message": 'Select which Vue plugins to install',
-      "choices": ['splashscreen','bootstrap', 'momentjs', 'multilanguage', 'fontawesome','GoogleTagManager'],
-      "default": ['splashscreen','bootstrap', 'momentjs', 'multilanguage', 'fontawesome']
+      "choices": ['splashscreen','bootstrap', 'momentjs', 'multilanguage', 'botui', 'fontawesome','GoogleTagManager'],
+      "default": ['splashscreen','bootstrap', 'momentjs', 'multilanguage', 'botui', 'fontawesome']
     }
   },
   "filters": {

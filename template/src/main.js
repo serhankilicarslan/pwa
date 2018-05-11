@@ -36,6 +36,11 @@ var locales = {
 Vue.use(Lang, {lang: 'en', locales: locales})
 {{/isEnabled}}
 
+{{#isEnabled plugins 'botui'}}
+import BotUI from 'botui'
+Vue.use(BotUI);
+{{/isEnabled}}
+
 Vue.config.productionTip = false{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
 /* eslint-disable no-new */
