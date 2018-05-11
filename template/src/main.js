@@ -41,6 +41,11 @@ import BotUI from 'botui'
 Vue.use(BotUI);
 {{/isEnabled}}
 
+{{#isEnabled plugins 'vue-analytics'}}
+import VueAnalytics from 'vue-analytics'
+Vue.use(VueAnalytics)
+{{/isEnabled}}
+
 Vue.config.productionTip = false{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
 /* eslint-disable no-new */
