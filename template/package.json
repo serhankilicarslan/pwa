@@ -21,6 +21,8 @@
     "vue-moment": "^3.2.0",
     "moment-timezone": "^0.5.16"{{/isEnabled}}{{#isEnabled plugins 'multilanguage'}},
     "vue-lang": "^0.2.5"{{/isEnabled}}
+    "vue-analytics": "^5.10.4",
+    "botui": "^0.3.4",
   },
   "devDependencies": {
     "autoprefixer": "^7.1.5",
