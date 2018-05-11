@@ -49,6 +49,24 @@ Vue.use(VueAnalytics, {
 })
 {{/isEnabled}}
 
+{{#isEnabled plugins 'vuex'}}
+import Vuex from 'vuex'
+Vue.use(Vuex)
+{{/isEnabled}}
+
+{{#isEnabled plugins 'vue-form-generator'}}
+import VueFormGenerator from "vue-form-generator";
+import "vue-form-generator/dist/vfg.css";
+Vue.use(VueFormGenerator)
+{{/isEnabled}}
+
+{{#isEnabled plugins 'vue-recaptcha'}}
+import VueRecaptcha from 'vue-recaptcha';
+Vue.use(VueRecaptcha)
+{{/isEnabled}}
+
+
+
 Vue.config.productionTip = false{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
 /* eslint-disable no-new */
